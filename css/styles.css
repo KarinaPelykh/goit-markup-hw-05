@@ -93,7 +93,9 @@ header {
 .logo:focus,
 .accent-studio:hover,
 .accent-studio:focus {
-    color: #404BBF
+    color: #404BBF;
+    transition-duration: 1s;
+    
 }
 
 /* =====================/логотип =======================*/
@@ -112,8 +114,7 @@ header {
     position: relative;
     
 }
-.menu-link:hover::after,
-.menu-link:focus::after, 
+/*   */
 .menu-link.current::after {
     content: '';
     position: absolute;
@@ -123,6 +124,7 @@ header {
     background-color: #404BBF;
     border-radius: 2px;
     bottom: 1px;
+    
 }
 
 .menu-list .menu-link {
@@ -138,7 +140,8 @@ header {
 
 .menu-link:hover,
 .menu-link:focus{
-    color: #404BBF
+    color: #404BBF;
+    transition-duration: 1s;
 }
 /* ========================/список посилань=====================*/
 
@@ -169,12 +172,14 @@ header {
 .mail-link:hover,
 .mail-link:focus {
     color: #404BBF;
+    transition-duration: 1s;
 
 }
 
 .tel-link:hover,
 .tel-link:focus {
     color: #404BBF;
+    transition-duration: 1s;
 }
 
 /*=============================/адреса================================ */
@@ -242,6 +247,7 @@ header {
     background: #404BBF;
     color: #ffffff;
     border: 1px solid transparent;
+    transition-duration: 1s;
 }
 
 /* ===================/заголовок-кнопка 1-section============== */
@@ -406,7 +412,7 @@ margin-right: 0;
 
 .container-heading {
 
-   padding: 32px 0 32px ;
+   padding: 32px 16px ;
    border-radius: 0px 0px 4px 4px;
 
 }
@@ -451,7 +457,8 @@ margin-right: 0;
 }
 .icon-link:hover,
 .icon-link:focus{
-    background-color: #404bbf;}
+    background-color: #404bbf;
+transition-duration: 1s;}
 
 .items-ul-icon{
     display: flex;
@@ -555,7 +562,8 @@ margin-right: 0;
 .logo:focus,
 .accent:hover,
 .accent:focus {
-    color: #404BBF
+    color: #404BBF;
+    transition-duration: 1s;
 }
 /* /logo */
 
@@ -598,6 +606,7 @@ font-family: 'Roboto';
 .social-link:focus{
 
     background: #31d0aa;
+    transition-duration: 1s;
 
 }
 
@@ -674,6 +683,7 @@ font-family: 'Roboto';
 
     color: #ffffff;
     box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition-duration: 1s;
 }
 
 .item-images-link{
@@ -686,6 +696,7 @@ font-family: 'Roboto';
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
+            transition-duration: 1s;
     }
 
 .menu-ul{
@@ -735,15 +746,18 @@ font-family: 'Roboto';
 
 transition-property:translateY;
 transform:translateY(100%);
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 transition-property:transform;
-transition-duration: 250ms;
+transition-duration: 550ms;
+background-color: rgba(77, 90, 229, 1);
 }
 
 .overley-link:hover .overley,
 .overley-link:focus .overley{
     transform: translateY(0%);
-    background-color: rgba(77, 90, 229, 1);
+    transition-duration: 2s;
+    background-color:rgba(77, 90, 229, 1);
+    
 }
 .text-overley{
     font-family: 'Roboto';
@@ -813,6 +827,7 @@ transition-duration: 250ms;
 border-color: 1px solid #404bbf;
    color: #404BBF;
 border: 1px solid #404bbf;
+transition-duration: 1s;
     
 }
 /* ======================================================================== */
@@ -827,6 +842,7 @@ border: 1px solid #404bbf;
 opacity: 0;
 visibility:hidden;
 pointer-events:none;
+
 }
 
 .backdrop{ 
@@ -836,20 +852,24 @@ pointer-events:none;
     position: fixed;
     top:0;
     left:0;
-    
+
     background-color: rgba(46, 47, 66, 0.4);
 
-    transition-property: opacity, visibility;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0,2, 1);
+transition-property: opacity,visibility;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0,0.2,1);
+/* transition-duration: 1000ms; */
+
 }
+
 
 .modal{
 position: absolute;
 top:50%;
 left:50%;
-transform: translateY(-50%) translateX(-50%);
 
+transform: translateY(-50%) translateX(-50%) scale(1) ;
+  
 max-width: 100%;
 width: 408px;
 min-height: 576px;
@@ -857,10 +877,11 @@ padding:24px;
 
 background-color: #FCFCFC;
 border-radius: 4px;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
-
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
+
+
 .modal-button{
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -874,10 +895,21 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0p
    align-items: center;
    margin-left: auto;
 }
+.modal-button:hover,
+.modal-button:focus{
+    background-color:#404BBF; 
+    fill: #ffffff;
+    transition-duration: 50ms;
+    cursor: pointer;
+}
 
-.backdrop .is-hidden .modal {
-    transform: translateX(-50%) translateY(-50%);
+
+/* .backdrop.is-hidden .modal  {
+    transform: translateY(-50%), translateX(-50%) scale(0.1) ;
     opacity:1;
+} */
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.1);
 }
 /* ======================================================================== */
 /*                                   /* Модальне вікно                       */
