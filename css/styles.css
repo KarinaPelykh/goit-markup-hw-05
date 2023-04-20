@@ -850,7 +850,9 @@ transition-duration: 1s;
 opacity: 0;
 visibility:hidden;
 pointer-events:none;
+
 transition-delay: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop{ 
@@ -885,6 +887,7 @@ padding:24px;
 
 background-color: #FCFCFC;
 border-radius: 4px;
+transition-property: transform;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -898,9 +901,6 @@ border-radius: 4px;
     width: 24px; 
     height: 24px; 
 
-transform: translateY(-50%) translateX(50%) scale(1);
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-        transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
     display: flex;
    justify-content: center;
@@ -916,12 +916,11 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
 }
 
 
-/* .backdrop.is-hidden .modal  {
-    transform: translateY(-50%), translateX(-50%) scale(0.1) ;
-    opacity:1;
-} */
+
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.1);
+    transition-property: transform;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ======================================================================== */
 /*                                   /* Модальне вікно                       */
