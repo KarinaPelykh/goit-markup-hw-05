@@ -411,9 +411,10 @@ margin-right: 0;
 }
 
 .container-heading {
-
+border: 1px solid #E7E9FC;
+border-top:none;
    padding: 32px 16px ;
-   border-radius: 0px 0px 4px 4px;
+   /* border-radius: 0px 0px 4px 4px; */
 
 }
 
@@ -707,7 +708,7 @@ font-family: 'Roboto';
        row-gap: 48px;
 }
 .item-images {
-   border: 1px solid #E7E9FC;
+   /* border: 1px solid #E7E9FC; */
     width: calc((100% - 48px) / 3);
 
 }
