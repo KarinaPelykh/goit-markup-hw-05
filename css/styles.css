@@ -263,7 +263,7 @@ header {
     color: #ffffff;
     cursor: pointer;
 
-transition-property: background-color;
+transition-property: background-color,color,border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -272,7 +272,7 @@ transition-property: background-color;
 .btn-list:focus {
     background-color: #404BBF;
     color: #ffffff;
-    border: 1px solid transparent;
+    border: transparent;
 
     
        
@@ -468,9 +468,7 @@ border-top:none;
   gap: 24px;
   justify-content: center;
 
-    transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .section-items-icon{
@@ -616,9 +614,7 @@ border-top:none;
 .accent:focus {
     color: #404BBF;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 /* /logo */
 
@@ -732,7 +728,8 @@ font-family: 'Roboto';
     letter-spacing: 0.04em;
     color: #4d5ae5;
 
-    cursor: pointer;transition-property: background-color;
+    cursor: pointer;
+    transition-property: background-color,color,box-shadow;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -750,7 +747,7 @@ font-family: 'Roboto';
 .item-images-link{
     display: block; 
     
-    transition-property: box-shadow,background-color;
+    transition-property: box-shadow;
     transition-duration: 250ms; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -815,7 +812,7 @@ transition-property:translateY;
 transform:translateY(100%);
 
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-transition-property:transform ;
+transition-property:transform,background-color;
 transition-duration: 250ms;
 
 }
@@ -864,18 +861,14 @@ transition-duration: 250ms;
    .customer-section-menu{
       display: flex;   
        gap: 24px;
-        transition-property: border-color, border;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       
    }
 
 .customer-section-items{
 
     width: calc((100% - 120px) / 6);
     height: 88px;
-        transition-property: border-color, border;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+        
    }
 .customer-section-link{
     width: 100%;
@@ -887,6 +880,10 @@ transition-duration: 250ms;
         justify-content: center;
         align-items: center;
         color: #8E8F99;
+
+        transition-property: border-color,color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .customer-icon{
@@ -899,7 +896,7 @@ transition-duration: 250ms;
   
    .customer-container-icon:hover ,
   .customer-container-icon:focus{ 
-border-color: 1px solid #404bbf;
+border-color: #404bbf;
    color: #404BBF;
 border: 1px solid #404bbf;
 
