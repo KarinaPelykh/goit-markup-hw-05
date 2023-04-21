@@ -777,7 +777,7 @@ font-family: 'Roboto';
     width: calc((100% - 48px) / 3);
 
 }
-.headin-caption{margin-bottom: 8px;
+.headin-caption{ margin-bottom: 8px;
         font-family: "Roboto",
             sans-serif;
         font-weight: 500;
@@ -864,9 +864,9 @@ transition-duration: 250ms;
    .customer-section-menu{
       display: flex;   
        gap: 24px;
-        /* transition-property: border-color, border;
+        transition-property: border-color, border;
             transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
 .customer-section-items{
@@ -933,7 +933,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(46, 47, 66, 0.4);
 transition-duration: 250ms;
 transition-property: opacity 250ms,visibility 250ms;
-
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
 
 
@@ -955,7 +954,8 @@ padding:24px;
 background-color: #FCFCFC;
 border-radius: 4px;
 transition-property: transform;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)250ms,opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)250ms,
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
