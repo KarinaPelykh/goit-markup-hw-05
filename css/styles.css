@@ -76,7 +76,11 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    text-decoration: none;
+    text-decoration: none; 
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accent-studio {
     display: inline-block;
@@ -87,6 +91,10 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover,
@@ -94,8 +102,6 @@ header {
 .accent-studio:hover,
 .accent-studio:focus {
     color: #404BBF;
-    transition-duration: 1s;
-    
 }
 
 /* =====================/логотип =======================*/
@@ -112,6 +118,9 @@ header {
 }
 .menu-link {
     position: relative;
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 /*   */
@@ -141,7 +150,8 @@ header {
 .menu-link:hover,
 .menu-link:focus{
     color: #404BBF;
-    transition-duration: 1s;
+
+   
 }
 /* ========================/список посилань=====================*/
 
@@ -166,20 +176,32 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455
+    color: #434455 ;
+
+     transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
+.tel-link{
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 
 .mail-link:hover,
 .mail-link:focus {
     color: #404BBF;
-    transition-duration: 1s;
+
+  
 
 }
 
 .tel-link:hover,
 .tel-link:focus {
     color: #404BBF;
-    transition-duration: 1s;
+
+    
 }
 
 /*=============================/адреса================================ */
@@ -240,14 +262,20 @@ header {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+
+transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list:hover,
 .btn-list:focus {
-    background: #404BBF;
+    background-color: #404BBF;
     color: #ffffff;
     border: 1px solid transparent;
-    transition-duration: 1s;
+
+    
+       
 }
 
 /* ===================/заголовок-кнопка 1-section============== */
@@ -439,7 +467,10 @@ border-top:none;
   display: flex;
   gap: 24px;
   justify-content: center;
-        
+
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-items-icon{
@@ -461,12 +492,17 @@ border-top:none;
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    
+    transition-property: background-color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
 .icon-link:focus{
     background-color: #404bbf;
-transition-duration: 1s;}
+
+   }
 
 .items-ul-icon{
     display: flex;
@@ -554,6 +590,10 @@ transition-duration: 1s;}
     text-transform: uppercase;
     color: #4D5AE5;
     text-decoration: none;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accent {
@@ -564,6 +604,10 @@ transition-duration: 1s;}
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:hover,
@@ -571,7 +615,10 @@ transition-duration: 1s;}
 .accent:hover,
 .accent:focus {
     color: #404BBF;
-    transition-duration: 1s;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* /logo */
 
@@ -593,10 +640,12 @@ font-family: 'Roboto';
     gap: 16px;
    
     width: 208px;
+
 }
 .social-item{
     width: 40px;
     height: 40px;
+  
 }
 
 .social-link{
@@ -607,16 +656,20 @@ font-family: 'Roboto';
     height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
+
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
     
-}
+
 .social-link:hover,
 .social-link:focus{
 
-    background: #31d0aa;
-    transition-duration: 1s;
+    background-color: #31d0aa;
 
-}
+  }
 
 .social-icon{
 
@@ -662,8 +715,6 @@ font-family: 'Roboto';
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
-   
-    
     
 }
 .btn-text {
@@ -680,22 +731,28 @@ font-family: 'Roboto';
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #4d5ae5;
-    cursor: pointer;
+
+    cursor: pointer;transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .btn-text:hover,
 .btn-text:focus {
-    background: #404BBF;
+    background-color: #404BBF;
 
     color: #ffffff;
     box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 1s;
+
+
 }
 
 .item-images-link{
-    display: block;
+    display: block; 
+    
+    transition-property: box-shadow,background-color;
+    transition-duration: 250ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -704,8 +761,8 @@ font-family: 'Roboto';
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
-            transition-duration: 1s;
-    }
+
+ }
 
 .menu-ul{
     display: flex;
@@ -713,6 +770,7 @@ font-family: 'Roboto';
         flex-wrap: wrap;
        column-gap: 24px;
        row-gap: 48px;
+       
 }
 .item-images {
    /* border: 1px solid #E7E9FC; */
@@ -751,19 +809,20 @@ font-family: 'Roboto';
     left:0;
     display:block;
     padding:40px 32px 164px 32px;
+background-color: rgba(77, 90, 229, 1);
 
 transition-property:translateY;
 transform:translateY(100%);
+
 transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-transition-property:transform;
-transition-duration: 550ms;
-background-color: rgba(77, 90, 229, 1);
+transition-property:transform ;
+transition-duration: 250ms;
+
 }
 
 .overley-link:hover .overley,
 .overley-link:focus .overley{
     transform: translateY(0%);
-    transition-duration: 2s;
     background-color:rgba(77, 90, 229, 1);
     
 }
@@ -805,14 +864,18 @@ background-color: rgba(77, 90, 229, 1);
    .customer-section-menu{
       display: flex;   
        gap: 24px;
-       
+        /* transition-property: border-color, border;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
    }
 
 .customer-section-items{
 
     width: calc((100% - 120px) / 6);
     height: 88px;
-       
+        transition-property: border-color, border;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
    }
 .customer-section-link{
     width: 100%;
@@ -830,12 +893,16 @@ background-color: rgba(77, 90, 229, 1);
     fill: currentColor;
    }
 
-  .customer-container-icon:hover ,
+  .customer-container-icon{
+  
+  }
+  
+   .customer-container-icon:hover ,
   .customer-container-icon:focus{ 
 border-color: 1px solid #404bbf;
    color: #404BBF;
 border: 1px solid #404bbf;
-transition-duration: 1s;
+
     
 }
 /* ======================================================================== */
@@ -852,7 +919,7 @@ visibility:hidden;
 pointer-events:none;
 
 transition-delay: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop{ 
@@ -906,13 +973,18 @@ transition-property: transform;
    justify-content: center;
    align-items: center;
    margin-left: auto;
+
+    transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button:hover,
 .modal-button:focus{
     background-color:#404BBF; 
     fill: #ffffff;
-    transition-duration: 50ms;
+   
     cursor: pointer;
+   
 }
 
 
